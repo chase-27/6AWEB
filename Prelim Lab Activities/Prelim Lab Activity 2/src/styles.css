@@ -1,0 +1,291 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #131313;
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.cv-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #222;
+  color: #e0e0e0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  border: 5px solid #ffbb33;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #9b4d96;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #9b4d96;
+  padding-bottom: 10px;
+}
+
+.profile-text,
+.skills-card li,
+.tech-category p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+/* Header Section */
+.cv-header {
+  width: 50%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #9b4d96, #4e2a84);
+  padding: 50px;
+  color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #333;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item i {
+  font-size: 1.4rem;
+  color: #ffbb33;
+}
+
+.contact-item a {
+  color: #ffbb33;
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #ffbb33;
+  font-weight: bold;
+}
+
+/* Skills Section */
+.skills-container {
+  margin: 10px auto;
+  width: 50%;
+}
+.skills-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-column {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skills-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-column li {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.skills-column li::before {
+  content: "•";
+  color: #ffbb33;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+/* Technical Skills Section */
+.technical-container{
+  width: 50%;
+  margin: 0 auto;
+}
+.tech-categories {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tech-category {
+  flex: 1;
+  min-width: 280px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #9b4d96;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tech-category h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffbb33;
+  margin-bottom: 15px;
+}
+
+.tech-category p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.tech-category:hover {
+  transform: translateY(-5px);
+}
+
+/* Profile Section */
+.profile-container{
+  width: 50%;
+  margin: 0 auto;
+}
+.profile-section {
+  margin: 20px auto;
+  background-color: #333;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-text {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 5px solid #ffbb33;
+  padding: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-left p {
+  font-size: 1rem;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffbb33;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid,
+  .tech-categories {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 2.8rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .skills-column li {
+    font-size: 1rem;
+  }
+}
