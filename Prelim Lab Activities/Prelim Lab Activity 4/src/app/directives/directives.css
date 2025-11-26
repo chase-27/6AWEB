@@ -1,0 +1,213 @@
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.styled-table {
+  width: 75%;
+  margin: 0 auto 30px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.15);
+  background: linear-gradient(135deg, #f9f9fb, #e3e7f1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+.styled-table:hover {
+  transform: translateY(-5px);
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #d1d9e6;
+  color: #34495e;
+  font-size: 15px;
+}
+
+.styled-table th {
+  background: #34495e;
+  color: #ecf0f1;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.5);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #1c5985, #40c4ff);
+  box-shadow: 0 6px 18px rgba(26, 100, 140, 0.75);
+  transform: scale(1.05);
+}
+.btn-danger {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.5);
+}
+.btn-danger:hover {
+  background: linear-gradient(135deg, #a52820, #d73828);
+  box-shadow: 0 6px 18px rgba(165, 40, 32, 0.75);
+  transform: scale(1.05);
+}
+
+/* NOTES */
+.note {
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.note.success {
+  background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+  color: #2e7d32;
+  text-shadow: 0 1px 1px rgba(46,125,50,0.25);
+}
+
+.note.error {
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  color: #c62828;
+  text-shadow: 0 1px 1px rgba(198,40,40,0.25);
+}
+
+.note.info {
+  background: linear-gradient(135deg, #a0c4ff, #bdb2ff);
+  color: #26418f;
+  text-shadow: 0 1px 1px rgba(38,65,143,0.25);
+}
+
+/* INPUT FIELD */
+input[type="text"] {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #bdc3c7;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52,152,219,0.5);
+}
+
+/* CITY LIST */
+.city-list {
+  list-style-type: square;
+  padding-left: 25px;
+  color: #34495e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.city-list li {
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+.city-list li:hover {
+  color: #2980b9;
+  cursor: pointer;
+}
+
+/* STUDENT STATUS */
+.status {
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.status.active {
+  color: #27ae60;
+  text-shadow: 0 1px 3px rgba(39,174,96,0.5);
+}
+
+.status.inactive {
+  color: #e74c3c;
+  text-shadow: 0 1px 3px rgba(231,76,60,0.5);
+}
+
+/* TABLE ROW HOVER */
+.styled-table tbody tr:hover {
+  background: rgba(52, 152, 219, 0.1);
+  transition: background-color 0.25s ease;
+  cursor: default;
+}
+
+/* === RESPONSIVE STYLES === */
+@media screen and (max-width: 1024px) {
+  .styled-table {
+    width: 90%;
+  }
+  .btn {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .styled-table, input[type="text"] {
+    width: 95%;
+  }
+  .styled-table th, .styled-table td {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .styled-table, input[type="text"] {
+    width: 100%;
+  }
+  .styled-table th, .styled-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .city-list {
+    padding-left: 20px;
+  }
+  .note {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}

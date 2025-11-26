@@ -1,0 +1,106 @@
+<p class="title">Directives Works!</p>
+
+<table class="styled-table">
+  <tr>
+    <td>
+      @if (isStaticNoteVisible === true) {
+        <h2 class="note success">This is a static note with true value!</h2>
+      } @else {
+        <h2 class="note error">This static note has false value.</h2>
+      }
+      <button class ="btn" (click)="toggleStaticNote()">Toggle Static Note</button>
+    </td>
+  </tr>
+</table>
+
+<table class="styled-table">
+  <tr>
+    <td>
+      @if (isNoteVisible === true) {
+        <p class="note info">This is a note!</p>
+      }
+    </td>
+    <td>
+      <button class="btn" (click)="showNote()">Show Note</button>
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="hideNote()">Hide Note</button>
+    </td>
+  </tr>
+</table>
+
+<table class="styled-table">
+  <tr>
+    <td>
+      <button class="btn" (click)="toggleNote()">
+        {{ isParagraphVisible ? 'Hide' : 'Show' }}
+      </button>
+
+      @if (isParagraphVisible) {
+        <p class="note info">This is the paragraph content.</p>
+      }
+    </td>
+  </tr>
+</table>
+
+<table class="styled-table">
+  <tr>
+    <td>
+      @if (monthNameDynamic.toLowerCase() == 'jan') {
+        <p>January</p>
+      }
+      @else if (monthNameDynamic.toLowerCase() == 'feb') {
+        <p>February</p>
+      }
+      @else if (monthNameDynamic.toLowerCase() == 'mar') {
+        <p>March</p>
+      }
+      @else {
+        <p>Wrong input!</p>
+      }
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="monthNameDynamic">
+    </td>
+  </tr>
+</table>
+
+<table class="styled-table">
+  <tr>
+    <td>
+      <ul class="city-list">
+        @for (item of cityList; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table class="styled-table full">
+  <thead>
+    <tr>
+      <th>Student No</th>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of studentList; track $index) {
+      <tr>
+        <td>{{ $index + 1 }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.course }}</td>
+        <td>
+          @if (item.isActive == true) {
+            <p class="status active">Active</p>
+          }
+          @else {
+            <p class="status inactive">Inactive</p>
+          }
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
