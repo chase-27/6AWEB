@@ -1,0 +1,43 @@
+.form-section {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 98vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  font-size: 1.15rem;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 1.1rem;
+  font-size: 1.15rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.full {
+  grid-column: 1/-1;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.1rem 2.2rem;
+  border-radius: 8px;
+  border: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .form-grid { grid-template-columns: 1fr; }
+}

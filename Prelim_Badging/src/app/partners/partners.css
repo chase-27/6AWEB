@@ -1,0 +1,22 @@
+.partners td.logo .logo-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin: 0 auto;
+}
+.partners td.logo img {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.partners td.logo {
+  text-align: center;
+  vertical-align: middle;
+}
